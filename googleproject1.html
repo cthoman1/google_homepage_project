@@ -1,0 +1,142 @@
+<html lang="en">
+    <head>
+        <style>
+        nav {
+            display: grid;
+            grid-template-columns:60px 60px 60px auto 60px 60px 60px;
+        }
+        a:link {
+             text-decoration: none;
+             color: rgb(110, 110, 110);
+        }
+        a:visited {
+            text-decoration: none;
+            color: rgb(110, 110, 110);
+        }
+        a:hover {
+             text-decoration: underline;
+             color: rgb(110, 110, 110);
+        }
+        a:active {
+            text-decoration: underline;
+            color: rgb(110, 110, 110);
+        }
+        .nav-items {
+            border: 3px solid transparent;
+            border-radius: 10%;
+            color: rgb(110, 110, 110);
+            text-decoration: none; 
+            font-size: 11pt;
+            padding: 5px;
+            margin: 5px;
+        }
+        .main {
+          display: grid;  
+          grid-template-columns: repeat(20, 20fr);
+          grid-template-rows: repeat(20, 20fr);
+        }
+        .logo { 
+        grid-column-start: 10;
+        grid-column-end: 11;
+        grid-row-start:4;
+        grid-row-end: 7; 
+        max-width: 17rem;
+        height: auto;
+        justify-self: center;
+        }
+        .searchbar {
+        grid-row-start: 8;
+        grid-column-start: 9;
+        grid-column-end: 12;
+        border-radius: 10%;
+        border: 1px solid lightslategrey;
+        padding-left: 35px;
+        background-image: url("https://image.flaticon.com/icons/svg/54/54481.svg");
+        background-position: 7px 5px;
+        background-size: 5%;
+        background-repeat: no-repeat;
+        }
+        .searchbar:hover {
+        box-shadow:0px 0px 2px black;
+        }
+        .mic { 
+        grid-column-start: 11;
+        grid-row-start: 8;
+        border: transparent;
+        background-image: url("https://lh3.googleusercontent.com/proxy/VjQJqnZkMLpueUTl_M6LivioEyva2qRqx1TWFt-ep7vA2TZLXpwueZNbd7ZOdJitBXFabM6yrR9iTllFXmIR9LsE3KprY18Wc7e8YT2McqGBepZ5Fw");
+        background-size: 150%;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-position: -4px 0px;
+        }
+        .underbuttons {
+        grid-column-start: 10;
+        grid-row-start: 10;
+        margin: 10px;
+        }
+        .searchbutton, .luckybutton {
+            background-image:linear-gradient(rgb(208, 209, 209),white);
+            margin: 5px;
+            padding: 3px;
+            width: auto;
+            justify-self: center;
+        }
+        .searchbutton:hover, .luckybutton:hover {
+            border: 1px solid black;
+            text-decoration: none;
+        }
+        .undertext {
+            grid-column-start: 9;
+            grid-column-end: 16;
+            grid-row-start:11;
+            font-size: 10px
+        }
+        .undertext a{
+            color: blue;
+        }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-items">
+            <a href="">About
+            </a> 
+            </div>
+            <div class="nav-items">
+                <a href="">Store
+                </a>
+                </div>
+            <div class="nav-items">
+                <a href="">Gmail
+                </a> 
+                </div>
+            <div></div>
+            <div class="nav-items">
+                <a href="">Images
+                </a> 
+                </div>
+            <div class="nav-items">
+                <a href="">Menu
+                </a>
+                </div>
+            <div class="nav-items">
+                <a href="">Profile
+                </a>
+                </div>
+        </nav>
+        <main class="main">
+        <img alt="Google Logo" class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+        <input type="text" class="searchbar"> <button class="mic"></button>
+        <div class="underbuttons">
+            <a class="searchbutton" href="">Google Search</a>
+            <a class="luckybutton" href="">I'm Feeling Lucky</a>
+        </div>
+        <div class="undertext">
+            <p><a href="">
+                Discover the language of the ancient Egyptians:
+            </a> 
+             decode hieroglyphs using AI</p>
+        </div>
+        </main>       
+    </body>
+            </html>
